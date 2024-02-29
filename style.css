@@ -58,32 +58,6 @@ a:hover{
 .logo:hover{
     cursor: default;
 }
-.popup {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: none;
-}
-.popup-content {
-  background-color: white;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888888;
-  width: 30%;
-  font-weight: bolder;
-}
-.popup-content button {
-  display: block;
-  margin: 0 auto;
-}
-.show {
-  display: block;
-}
 
 
 #hamburger-nav{
@@ -163,8 +137,8 @@ a:hover{
 /* SECTIONS */
 
 section{
-    padding-top: 0vh;
-    height: 70vh;
+    padding-top: 4vh;
+    height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -251,7 +225,7 @@ section{
 }
 
 .btn-color-1:hover{
-    background: rgb(60, 54, 54);
+    background: rgb(0,0,0);
 }
 .btn-color-2{
     background: none;
@@ -285,9 +259,9 @@ section{
     display: flex;
   }
   
-  /*.about-pic {
+  .about-pic {
     border-radius: 2rem;
-  }*/
+  }
   
   .arrow {
     position: absolute;
@@ -309,12 +283,11 @@ section{
     height: 80%;
   }
   
-  /*.section__pic-container {
+  .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
-  }*/
-
+  }
 
 /* EXPERIENCE SECTION */
 
@@ -393,8 +366,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 50vh;
-    padding-top: 0vh;
+    height: 70vh;
   }
   
   .contact-info-upper-container {
