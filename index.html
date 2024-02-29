@@ -92,41 +92,6 @@ window.addEventListener("click", function (event) {
     </div>
 </nav>
 
-<div id="myPopup" class="popup">
-  <div class="popup-content">
-          <h1 class="title">Get in Touch</h1>
-              <img
-                src="email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-              />
-              <a href="mailto:thesheetalgupta@gmail.com" style="align-items: center;">thesheetalgupta@gmail.com</a>
-              <br><img
-                src="linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-              />
-              <a href="https://www.linkedin.com/in/sheetalgupta15/">LinkedIn</a>
-           
-       
-      <button class="btn btn-color-2"  id="closePopup">
-            Close
-        </button>
-  </div>
-</div>
-<script>
-myButton.addEventListener("click", function () {
-    myPopup.classList.add("show");
-});
-closePopup.addEventListener("click", function () {
-    myPopup.classList.remove("show");
-});
-window.addEventListener("click", function (event) {
-    if (event.target == myPopup) {
-        myPopup.classList.remove("show");
-    }
-});
-</script>
 <!-- Profile -->
 <section id="profile">
     <div class="section__pic-container">
