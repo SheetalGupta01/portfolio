@@ -24,10 +24,45 @@
             <!-- Projects Link -->
             <li><a href="#projects">Projects</a></li>
             <!-- Contact Link -->
-            <li><a href="#contact">Contact</a></li>
+            <li><a id="myButton">Contact</a></li>
         </ul>
     </div>
 </nav>
+<div id="myPopup" class="popup">
+  <div class="popup-content">
+          <h1 class="title">Get in Touch</h1>
+              <img
+                src="email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <a href="mailto:thesheetalgupta@gmail.com" style="align-items: center;">thesheetalgupta@gmail.com</a>
+              <br><img
+                src="linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <a href="https://www.linkedin.com/in/sheetalgupta15/">LinkedIn</a>
+           
+       
+      <button class="btn btn-color-2"  id="closePopup">
+            Close
+        </button>
+  </div>
+</div>
+<script>
+myButton.addEventListener("click", function () {
+    myPopup.classList.add("show");
+});
+closePopup.addEventListener("click", function () {
+    myPopup.classList.remove("show");
+});
+window.addEventListener("click", function (event) {
+    if (event.target == myPopup) {
+        myPopup.classList.remove("show");
+    }
+});
+</script>
 
 <!-- Mobile Navigation -->
 <nav id="hamburger-nav">
@@ -67,7 +102,7 @@
         <p class="section__text__p2">Software Developer</p>
         <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('Sheetal CV.pdf')">Download CV</button>
-            <button class="btn btn-color-1" onclick="location.href='https://sheetal-portofolio.netlify.app/#contact'">Contact Info</button>
+            <button class="btn btn-color-1" onclick="location.href='http://127.0.0.1:5500/#contact'">Contact Info</button>
         </div>
         <div id="socials-container">
             <img src="linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sheetalgupta15/'"/>
